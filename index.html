@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: sans-serif;">
+  <h1>Welcome to a simple SPA</h1>
+
+  <p>You are on: <span id="locationSpan"></span></p>
+
+  <p>You could go to:</p>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/unicorn">Unicorn</a></li>
+    <li><a href="/rainbow">Rainbow</a></li>
+  </ul>
+
+  <script>
+    const span = document.querySelector('#locationSpan')
+    span.innerHTML = window.location.pathname
+  </script>
+</body>
+</html>
